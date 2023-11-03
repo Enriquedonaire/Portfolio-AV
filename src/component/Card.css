@@ -1,0 +1,32 @@
+.card {
+  background-color: #192933;
+  width: 200px;
+  margin: 10px;
+  position: relative;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: rgba(0, 0, 0, 0.1);
+  filter: blur(4px);
+  z-index: -1;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}

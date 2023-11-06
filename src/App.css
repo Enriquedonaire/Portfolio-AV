@@ -7,7 +7,8 @@ body {
   align-items: center;
   align-content: center;
   height: 100vh;
-  margin-left: 150px;
+  width: 100%;
+  overflow: hidden;
 }
 
 a {
@@ -31,6 +32,7 @@ a:hover {
   margin-right:200px;
   background-color: #0f1923;
   color: #808080;
+  
 }
 
 .navbar ul {
@@ -41,6 +43,8 @@ a:hover {
 
 .navbar li {
   padding: 10px;
+  list-style-type: none;
+  display: flex;
 }
 
 .navbar h1 {
@@ -50,7 +54,6 @@ a:hover {
 
 .title{
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin-right: 350px; 
 }

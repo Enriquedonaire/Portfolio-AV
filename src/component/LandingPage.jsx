@@ -8,10 +8,10 @@ import "../App.css"
 const LandingPage = () => {
   return (
     <div>
-      <NavBar />
       <div className="title">
         <h1>Enrique Donaire DOP</h1>
       </div>
+      <NavBar />
       <Grid container spacing={2} justifyContent="center">
         {[...Array(12)].map((_, index) => (
           <Grid item key={index} xs={6} sm={3}>

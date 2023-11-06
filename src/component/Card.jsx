@@ -10,7 +10,7 @@ const Card = () => {
           component="img"
           alt="Sample Image"
           height="140"
-          image="./logo192.png" 
+          image="./eri9.jpg" 
           title="Sample Image"
         />
       </CardActionArea>

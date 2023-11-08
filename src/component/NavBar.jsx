@@ -7,8 +7,8 @@ const NavBar = () => {
         <div className="row alt-header">
           <div className="col-lg-6 col-md-6 col-sm-6 p-0">
             <div className="alt-img">
-              <a href={process.env.PUBLIC_URL + './'}>
-                <img src={process.env.PUBLIC_URL + './img/EnriqueDonaire.png'} width="30%" height="" alt="logo" />
+              <a href={process.env.PUBLIC_URL }>
+                <img src={`/${process.env.PUBLIC_URL}/img/EnriqueDonaire.png`} width="30%" height="" alt="logo" />
               </a>
             </div>
           </div>

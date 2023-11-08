@@ -16,13 +16,13 @@ const NavBar = () => {
             <div className="nav-links">
               <ul>
                 <li>
-                  <a href="/">| Work </a>
+                  <a href={`${process.env.PUBLIC_URL}/`}>| Work </a>
                 </li>
                 <li>
-                  <a href="/about">| About</a>
+                  <a href={`${process.env.PUBLIC_URL}/about`}>| About</a>
                 </li>
                 <li>
-                  <a href="/contact">| Contact</a>
+                  <a href={`${process.env.PUBLIC_URL}/contact`}>| Contact</a>
                 </li>
               </ul>
             </div>

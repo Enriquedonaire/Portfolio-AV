@@ -17,7 +17,7 @@ function App() {
   const images = [
     {
       id: 1,  
-      imagePath: './Portfolio-AV/img/1.jpg',
+      imagePath: `${process.env.PUBLIC_URL}/img/1.jpg`,
       alt: 'img',
       altImagePath: './Portfolio-AV/img/11.png',
       url: "https://player.vimeo.com/video/881820954"
@@ -108,7 +108,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Gallery images={images} />} />
           <Route path="/video/:id" element={<VideoPlayer />} />
-          <Route path="/about" element={<About />} />
+          <Route path={`${process.env.PUBLIC_URL}/about`} element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <section className="icons container-fluid">

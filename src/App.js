@@ -1,384 +1,136 @@
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import LandingPage from "./component/LandingPage";
-// import VideoPlayer from "./component/VideoPlayer";
-// import Contact from "./component/Contact";
-// import Footer from "./component/Footer";
-// import "./App.css"
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <div>
-//         <Routes>
-//           <Route path="/" element={<LandingPage />} />
-//           <Route path="/video" element={<VideoPlayer />} />
-//           <Route path="/contact" element={<Contact />} />
-//         </Routes>
-//         <Footer />
-//       </div>
-//     </Router>
-//   );
-// };
-
-// export default App;
-
-
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faVimeoV, faLinkedinIn, faBehance, faPinterest } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faVimeoV, faLinkedinIn, faCodepen } from '@fortawesome/free-brands-svg-icons';
 
 import './assets/sass/style.scss';
+import Gallery from './component/Gallery';
+import VideoPlayer from './component/VideoPlayer';
+import Contact from './component/Contact';
+import About from './component/About';
+import NavBar from './component/NavBar';
+import Footer from './component/Footer';
 
 
 function App() {
-    return (
-        <div>
-            <header className="container-fluid">
-                <div class="row alt-header">
-                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
-                        <div class="alt-img">
-                            <img src="./img/logo.svg" width="36%" height="19%" alt="logo" />
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
-                        <div class="nav-links">
-                            <ul>
-                                <li><a href="/">/ Work </a></li>
-                                <li><a href="about.html">/ About</a></li>
-                                <li><a href="contact.html">/ Contact</a></li>
-                            </ul>
-                        </div>
-                    </div>
 
-                </div>
-            </header>
+  const images = [
+    {
+      id: 1,  
+      imagePath: './img/1.jpg',
+      alt: 'img',
+      altImagePath: './img/11.png',
+      url: "https://player.vimeo.com/video/881820954"
+    },
+    {
+      id: 2,
+      imagePath: './img/8.jpg',
+      alt: 'img',
+      altImagePath: './img/88.png',
+      url: 'https://player.vimeo.com/video/881840941'
+    },
+    {
+      id: 3,
+      imagePath: './img/9.jpg',
+      alt: 'img',
+      altImagePath: './img/99.png',
+      url: 'https://player.vimeo.com/video/882482970'
+    },
+    {
+      id: 4,
+      imagePath: './img/10.jpg',
+      alt: 'img',
+      altImagePath: './img/1010.png',
+      url: 'https://player.vimeo.com/video/882506406'
+    },
+    {
+      id: 5,
+      imagePath: './img/2.jpg',
+      alt: 'img',
+      altImagePath: './img/22.png',
+      url: 'https://player.vimeo.com/video/882483453'
+    },
+    {
+      id: 6,
+      imagePath: './img/3.jpg',
+      alt: 'img',
+      altImagePath: './img/33.png',
+      url: 'https://player.vimeo.com/video/882483568'
+    },
+    {
+      id: 7,
+      imagePath: './img/4.jpg',
+      alt: 'img',
+      altImagePath: './img/44.png',
+      url: 'https://player.vimeo.com/video/882506406'
+    },
+    {
+      id: 8,
+      imagePath: './img/5.jpg',
+      alt: 'img',
+      altImagePath: './img/55.png',
+      url: 'https://player.vimeo.com/video/882506406'
+    },
+    {
+      id: 9,
+      imagePath: './img/6.jpg',
+      alt: 'img',
+      altImagePath: './img/66.png',
+      url: 'https://player.vimeo.com/video/882506406'
+    },
+    {
+      id: 10,
+      imagePath: './img/12.jpg',
+      alt: 'img',
+      altImagePath: './img/1212.png',
+      url: 'https://player.vimeo.com/video/882506406'
+    },
+    {
+      id: 11,
+      imagePath: './img/13.jpg',
+      alt: 'img',
+      altImagePath: './img/1313.png',
+      url: 'https://player.vimeo.com/video/882506406'
+    },
+    {
+      id: 12,
+      imagePath: './img/14.jpg',
+      alt: 'img',
+      altImagePath: './img/1414.png',
+      url: 'https://player.vimeo.com/video/882506406'
+    },
+  ];
 
-            <section className="slider container-fluid">
-                <div class="row all ">
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/1.jpg" width="100%" height="100%" alt='img' />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/11.png" width="100%" height="100%" alt='img' />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/8.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/88.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/9.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/99.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/10.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/1010.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/2.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/22.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/3.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/33.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/4.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/44.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/5.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/55.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/6.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/66.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/12.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/1212.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/13.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/1313.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/14.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/1414.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/15.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/1515.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/16.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <img src="./img/1616.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/17.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/1717.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/18.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/1818.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/19.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/1919.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/20.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/2020.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/21.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/2121.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/22.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/2222.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/23.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/2323.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/24.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/2424.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/25.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/2525.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/26.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/2626.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/27.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/2727.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/28.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/2828.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/29.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/2929.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/30.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <img src="./img/3030.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/31.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/3232.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 p-0">
-                        <div class="item">
-                            <div class="line-top"></div>
-                            <img src="./img/32.jpg" width="100%" height="100%" alt="img" />
-                            <div class="item-alt">
-                                <div class="line-top"></div>
-                                <img src="./img/3232.png" width="100%" height="100%" alt="img" />
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </section>
-
-            <section className="icons container-fluid">
-                <div className="icon">
-                <a className="i" href="/"><FontAwesomeIcon icon={faTwitter} /></a>
-                    <a className="i" href="/"><FontAwesomeIcon icon={faVimeoV} /></a>
-                    <a className="i" href="/"><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                    <a className="i" href="/"><FontAwesomeIcon icon={faBehance} /></a>
-                    <a className="i" href="/"><FontAwesomeIcon icon={faPinterest} /></a>
-                </div>
-            </section>
-
-            <footer className="container-fluid">
-                <p>Copyright © 2023 Enrique Donaire. All Rights Reserved.</p>
-            </footer>
-        </div>
-    );
+  return (
+    <>
+      <NavBar />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Gallery images={images} />} />
+          <Route path="/video/:id" element={<VideoPlayer />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <section className="icons container-fluid">
+          <div className="icon">
+            <a href="https://vimeo.com/user187493171" target='_blank' rel='noreferrer'>
+              <FontAwesomeIcon className="fa-brands fa-vimeo-v" icon={faVimeoV} />
+            </a>
+            <a href="https://www.github.com/Enriquedonaire" target='_blank' rel='noreferrer'>
+              <FontAwesomeIcon className="fa-brands fa-behance" icon={faGithub} />
+            </a>
+            <a href="https://codepen.io/Enrique-Andr" target='_blank' rel='noreferrer'>
+              <FontAwesomeIcon className="fa-brands fa-pinterest" icon={faCodepen} />
+            </a>
+            <a href="https://www.linkedin.com/in/enrique-andres-donaire-45089a295" target='_blank' rel='noreferrer'>
+              <FontAwesomeIcon className="fa-brands fa-linkedin-in" icon={faLinkedinIn} />
+            </a>
+          </div>
+        </section>
+        <Footer />
+      </Router>
+    </>
+  );
 }
 
 export default App;
-
-
-
-
-

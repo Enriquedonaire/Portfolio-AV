@@ -1,13 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 const Footer = () => {
   return (
-    <footer>
-      <div>Contact Information: donaire.webdev@gmail.com | +34662146383</div>
-      <div>© {new Date().getFullYear()} All Rights Reserved</div>
-      {/* Add social media links here */}
-    </footer>
-  );
-};
+    <div>
+      <footer className="container-fluid">
+          <p>Copyright © 2023 Enrique Donaire. All Rights Reserved.</p>
+        </footer>
+    </div>
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,24 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <nav>
-    <ul className="navbar">
-      <li>
-        <Link to="/">About</Link>
-      </li>
-      <li>
-        <Link to="/">Work</Link>
-      </li>
-      <li>
-        <Link to="/contact">Contact</Link>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/">Instagram</a>
-      </li>
-    </ul>
-  </nav>
+    <div>
+      <header className="container-fluid">
+        <div className="row alt-header">
+          <div className="col-lg-6 col-md-6 col-sm-6 p-0">
+            <div className="alt-img">
+              <a href="/">
+                <img src={process.env.PUBLIC_URL + '/img/EnriqueDonaire.png'} width="30%" height="" alt="logo" />
+              </a>
+            </div>
+          </div>
+          <div className="col-lg-6 col-md-6 col-sm-6 p-0">
+            <div className="nav-links">
+              <ul>
+                <li>
+                  <a href="/">| Work </a>
+                </li>
+                <li>
+                  <a href="/about">| About</a>
+                </li>
+                <li>
+                  <a href="/contact">| Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
   );
 };
 

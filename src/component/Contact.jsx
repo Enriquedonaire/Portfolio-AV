@@ -1,23 +1,24 @@
-import React, { useState } from 'react';
+import "../assets/sass/contact.scss"
 
 const Contact = () => {
-  const [message, setMessage] = useState('');
-
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Implement logic to send an email to your desired address
-  };
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <textarea value={message} onChange={handleMessageChange} />
-        <button type="submit">Send Message</button>
-      </form>
+      <section class="about container-fluid p-0">
+        <div class="row p-0 m-0">
+          <div class="col-lg-12 col-md-12 p-0 ">
+            <div class="contact-img">
+              <img src="img/pic2.jpg" class="cntcimg" alt='IMG'/>
+                <div class="txt">
+                  <p>Mobile: +34662146383</p>
+                  <h1>BCN</h1>
+                  <p>donaire.webdev@gmail.com</p>
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
   );
 };

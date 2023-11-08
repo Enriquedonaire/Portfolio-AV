@@ -17,7 +17,7 @@ function App() {
   const images = [
     {
       id: 1,  
-      imagePath: process.env.PUBLIC_URL + './Portfolio-AV/img/1.jpg',
+      imagePath: process.env.PUBLIC_URL + './img/1.jpg',
       alt: 'img',
       altImagePath: './Portfolio-AV/img/11.png',
       url: "https://player.vimeo.com/video/881820954"

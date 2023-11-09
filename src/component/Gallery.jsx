@@ -8,8 +8,10 @@ const Gallery = ({images}) => {
 
 const handleImageClick = (url) => {
   const videoId = url.split('/').pop();
-  setSelectedVideoId(videoId);
-  window.location.href = `/video/${videoId}`;
+  console.log("error", videoId )  
+    setSelectedVideoId(videoId);
+  window.location.href = `/Portfolio-AV/video/${videoId}`;
+  
 };
 
   return (

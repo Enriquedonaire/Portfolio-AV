@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faVimeoV, faLinkedinIn, faCodepen } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faVimeoV, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 import './assets/sass/style.scss';
 import Gallery from './component/Gallery';
@@ -115,11 +115,11 @@ function App() {
             <a href="https://vimeo.com/user187493171" target='_blank' rel='noreferrer'>
               <FontAwesomeIcon className="fa-brands fa-vimeo-v" icon={faVimeoV} />
             </a>
+            <a href="https://www.instagram.com/kikidonaire/" target='_blank' rel='noreferrer'>
+              <FontAwesomeIcon className="fa-brands fa-pinterest" icon={faInstagram} />
+            </a>
             <a href="https://www.github.com/Enriquedonaire" target='_blank' rel='noreferrer'>
               <FontAwesomeIcon className="fa-brands fa-behance" icon={faGithub} />
-            </a>
-            <a href="https://codepen.io/Enrique-Andr" target='_blank' rel='noreferrer'>
-              <FontAwesomeIcon className="fa-brands fa-pinterest" icon={faCodepen} />
             </a>
             <a href="https://www.linkedin.com/in/enrique-andres-donaire-45089a295" target='_blank' rel='noreferrer'>
               <FontAwesomeIcon className="fa-brands fa-linkedin-in" icon={faLinkedinIn} />

@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import '../assets/sass/style.scss'
 const NavBar = () => {
   return (
     <div>
       <header className="container-fluid">
         <div className="row alt-header">
           <div className="col-lg-6 col-md-6 col-sm-6 p-0">
-            <div className="alt-img">
+            <div className="alt-img" >
               <Link to="/Portfolio-AV/">
-                <img src={`${process.env.PUBLIC_URL}/img/EnriqueDonaire.png`} width="50%" height="" alt="logo" />
+                <img src={`${process.env.PUBLIC_URL}/img/EnriqueDonaire.png`} width="300" height=""alt="logo" />
               </Link>
             </div>
           </div>

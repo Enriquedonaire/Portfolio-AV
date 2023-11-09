@@ -103,7 +103,7 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <NavBar className="container-fluid" />
         <Routes>
           <Route exact path="/Portfolio-AV/" element={<Gallery images={images} />} />
           <Route exact path="/video/:id" element={<VideoPlayer />} />

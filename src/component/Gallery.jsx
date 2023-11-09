@@ -10,7 +10,7 @@ const handleImageClick = (url) => {
   const videoId = url.split('/').pop();
   console.log("error", videoId )  
     setSelectedVideoId(videoId);
-  window.location.href = `/Portfolio-AV/video/${videoId}`;
+  window.location.href = `${process.env.PUBLIC_URL}/video/${videoId}`;
   
 };
 

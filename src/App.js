@@ -105,10 +105,10 @@ function App() {
     <>
       <NavBar />
         <Routes>
-          <Route path="/Portfolio-AV" element={<Gallery images={images} />} />
-          <Route path="/Portfolio-AV/video/:id" element={<VideoPlayer />} />
-          <Route path="/Portfolio-AV/about" element={<About />} />
-          <Route path="/Portfolio-AV/contact" element={<Contact />} />
+          <Route path="/" element={<Gallery images={images} />} />
+          <Route exact path="/video/:id" element={<VideoPlayer />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <section className="icons container-fluid">
           <div className="icon">

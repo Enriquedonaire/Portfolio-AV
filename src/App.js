@@ -105,7 +105,7 @@ function App() {
     <>
       <NavBar />
         <Routes>
-          <Route path="/" element={<Gallery images={images} />} />
+          <Route exact path="/Portfolio-AV/" element={<Gallery images={images} />} />
           <Route exact path="/video/:id" element={<VideoPlayer />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

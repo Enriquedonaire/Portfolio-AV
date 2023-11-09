@@ -8,9 +8,9 @@ const Gallery = ({images}) => {
 
 const handleImageClick = (url) => {
   const videoId = url.split('/').pop();
-  console.log("error", videoId )  
+  console.log("error", videoId ) 
     setSelectedVideoId(videoId);
-  window.location.href = `${process.env.PUBLIC_URL}/video/${videoId}`;
+  window.location.href = `/video/${videoId}`;
   
 };
 

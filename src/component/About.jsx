@@ -3,16 +3,16 @@ import '../assets/sass/about.scss';
 const About = () => {
   return (
     <div>
-      <section class="about container-fluid p-0">
-        <div class="row m-0 p-0 ">
-          <div class="col-lg-12 p-0 m-0">
+      <section className="about container-fluid p-0">
+        <div className="row m-0 p-0 ">
+          <div className="col-lg-12 p-0 m-0">
             <img src="/Portfolio-AV/img/pic1.jpg" alt="" />
           </div>
         </div>
       </section>
 
-      <section class="abouttext">
-        <div class="text container-fluid">
+      <section className="abouttext">
+        <div className="text container-fluid">
           <h1>/ ABOUT</h1>
           <p>John Likens is a director and designer based in New York City. Recognized with winning an Emmy Award
             for Outstanding Graphic Design and Art Direction, a SXSW Title Design Award, and a spot on Shots’

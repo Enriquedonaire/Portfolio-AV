@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
@@ -7,22 +8,22 @@ const NavBar = () => {
         <div className="row alt-header">
           <div className="col-lg-6 col-md-6 col-sm-6 p-0">
             <div className="alt-img">
-              <a href="/">
+              <Link to="/">
                 <img src={`${process.env.PUBLIC_URL}/img/EnriqueDonaire.png`} width="50%" height="" alt="logo" />
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-6 p-0">
             <div className="nav-links">
               <ul>
                 <li>
-                  <a href={`${process.env.PUBLIC_URL}/`}>| Work </a>
+                  <Link to='/'>| Work </Link>
                 </li>
                 <li>
-                  <a href={`${process.env.PUBLIC_URL}/about`}>| About</a>
+                  <Link to='/about'>| About</Link>
                 </li>
                 <li>
-                  <a href={`${process.env.PUBLIC_URL}/contact`}>| Contact</a>
+                  <Link to='/contact'> | Contact</Link>
                 </li>
               </ul>
             </div>

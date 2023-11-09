@@ -1,18 +1,22 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import VideoPlayer from './VideoPlayer';
 
 const Gallery = ({images}) => {
+  const navigate = useNavigate();
+
   const [selectedVideoId, setSelectedVideoId] = useState(null);
 
 
 
-const handleImageClick = (url) => {
-  const videoId = url.split('/').pop();
-  console.log("error", videoId ) 
+
+  const handleImageClick = (url) => {
+    const videoId = url.split('/').pop();
+    console.log("error", videoId);
     setSelectedVideoId(videoId);
-  window.location.href = `${process.env.PUBLIC_URL}/video/${videoId}`;
-  
-};
+    navigate(`/video/${videoId}`);
+  };
+
 
   return (
     <section className="slider container-fluid">

@@ -6,7 +6,7 @@ const About = () => {
       <section className="about container-fluid p-0">
         <div className="row m-0 p-0 ">
           <div className="col-lg-12 p-0 m-0">
-            <img src="/Portfolio-AV/img/pic1.jpg" alt="" />
+            <img src="/Portfolio-AV/img/pic 1.jpg" alt="" />
           </div>
         </div>
       </section>

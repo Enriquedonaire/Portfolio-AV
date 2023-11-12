@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://enriquedonaire.github.io/Portfolio-AV/static/css/main.dba635c7.css",
-    "main.js": "https://enriquedonaire.github.io/Portfolio-AV/static/js/main.cc8a057d.js",
+    "main.js": "https://enriquedonaire.github.io/Portfolio-AV/static/js/main.d0aca37a.js",
     "index.html": "https://enriquedonaire.github.io/Portfolio-AV/index.html",
     "main.dba635c7.css.map": "https://enriquedonaire.github.io/Portfolio-AV/static/css/main.dba635c7.css.map",
-    "main.cc8a057d.js.map": "https://enriquedonaire.github.io/Portfolio-AV/static/js/main.cc8a057d.js.map"
+    "main.d0aca37a.js.map": "https://enriquedonaire.github.io/Portfolio-AV/static/js/main.d0aca37a.js.map"
   },
   "entrypoints": [
     "static/css/main.dba635c7.css",
-    "static/js/main.cc8a057d.js"
+    "static/js/main.d0aca37a.js"
   ]
 }

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/sass/style.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 const NavBar = () => {
   return (
@@ -28,6 +30,10 @@ const NavBar = () => {
               </li>
               <li>
                 <Link to="/contact"> | Contact</Link>
+              </li>
+              <li>
+                <a href="/Portfolio-AV/Enrique Donaire Videographer.pdf.pdf" download target='_blank' rel='noreferrer'>
+                | CV <FontAwesomeIcon icon={faFilePdf} size="lg" /></a>
               </li>
             </ul>
           </div>

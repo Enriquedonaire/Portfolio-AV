@@ -76,29 +76,29 @@ function App() {
       imagePath:'/Portfolio-AV/img/6.jpg',
       alt: 'img',
       altImagePath: '/Portfolio-AV/img/66.png',
-      url: 'https://player.vimeo.com/video/882506406'
+      url: 'https://player.vimeo.com/video/883746128'
     },
-    {
-      id: 10,
-      imagePath:'/Portfolio-AV/img/12.jpg',
-      alt: 'img',
-      altImagePath: '/Portfolio-AV/img/1212.png',
-      url: 'https://player.vimeo.com/video/882506406'
-    },
-    {
-      id: 11,
-      imagePath:'/Portfolio-AV/img/13.jpg',
-      alt: 'img',
-      altImagePath: '/Portfolio-AV/img/1313.png',
-      url: 'https://player.vimeo.com/video/882506406'
-    },
-    {
-      id: 12,
-      imagePath:'/Portfolio-AV/img/14.jpg',
-      alt: 'img',
-      altImagePath: '/Portfolio-AV/img/1414.png',
-      url: 'https://player.vimeo.com/video/882506406'
-    },
+    // {
+    //   id: 10,
+    //   imagePath:'/Portfolio-AV/img/12.jpg',
+    //   alt: 'img',
+    //   altImagePath: '/Portfolio-AV/img/1212.png',
+    //   url: 'https://player.vimeo.com/video/882506406'
+    // },
+    // {
+    //   id: 11,
+    //   imagePath:'/Portfolio-AV/img/13.jpg',
+    //   alt: 'img',
+    //   altImagePath: '/Portfolio-AV/img/1313.png',
+    //   url: 'https://player.vimeo.com/video/882506406'
+    // },
+    // {
+    //   id: 12,
+    //   imagePath:'/Portfolio-AV/img/14.jpg',
+    //   alt: 'img',
+    //   altImagePath: '/Portfolio-AV/img/1414.png',
+    //   url: 'https://player.vimeo.com/video/882506406'
+    // },
   ];
 
   return (

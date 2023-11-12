@@ -1,4 +1,4 @@
-# 🏨 Portfolio Audiovisual
+# Portfolio Audiovisual
 
 ##   Tecnologies 🛠️ : 
 <br/>

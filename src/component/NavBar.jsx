@@ -32,7 +32,7 @@ const NavBar = () => {
                 <Link to="/contact"> | Contact</Link>
               </li>
               <li>
-                <a href="/Portfolio-AV/Enrique Donaire Videographer.pdf.pdf" download target='_blank' rel='noreferrer'>
+                <a href="/Portfolio-AV/Enrique-A-Donaire-Videographer.pdf" download target='_blank' rel='noreferrer'>
                   | CV <FontAwesomeIcon icon={faFilePdf} size="lg" /></a>
               </li>
             </ul>

@@ -121,7 +121,7 @@ function App() {
             <a href="https://www.github.com/Enriquedonaire" target='_blank' rel='noreferrer'>
               <FontAwesomeIcon className="fa-brands fa-behance" icon={faGithub} />
             </a>
-            <a href="https://www.linkedin.com/in/enrique-andres-donaire-45089a295" target='_blank' rel='noreferrer'>
+            <a href="https://www.linkedin.com/in/enrique-a-donaire" target='_blank' rel='noreferrer'>
               <FontAwesomeIcon className="fa-brands fa-linkedin-in" icon={faLinkedinIn} />
             </a>
           </div>

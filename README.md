@@ -1,6 +1,6 @@
 # Portfolio Audiovisual  💻 
 
-##   Tecnologies 🛠️ : 
+##  🛠️  Tecnologies : 
 <br/>
 - ReactJS <br/>
 - JavaScript <br/>

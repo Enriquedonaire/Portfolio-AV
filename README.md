@@ -1,6 +1,6 @@
-# Portfolio Audiovisual  💻 
+# Portfolio Audiovisual 
 
-##   Tecnologies 🛠️ : 
+##  Tecnologies 🛠️: 
 <br/>
 - ReactJS <br/>
 - JavaScript <br/>
@@ -12,6 +12,6 @@
 - Adobe XD <br/>
 <br/>
 
-# Web-Site: 
+#   💻Web-Site: 
 
 #   https://enriquedonaire.github.io/Portfolio-AV

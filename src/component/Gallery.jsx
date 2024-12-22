@@ -7,9 +7,6 @@ const Gallery = ({images}) => {
 
   const [selectedVideoId, setSelectedVideoId] = useState(null);
 
-
-
-
   const handleImageClick = (url) => {
     const videoId = url.split('/').pop();
     console.log("error", videoId);

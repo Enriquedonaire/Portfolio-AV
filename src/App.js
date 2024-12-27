@@ -82,7 +82,7 @@ function App() {
     <>
       <NavBar className="container-fluid" />
       <Routes>
-        <Route exact path="/Portfolio-AV/" element={<HomePage images={images} />} />
+        <Route exact path="/" element={<HomePage images={images} />} />
         <Route exact path="/video/:id" element={<VideoPlayer />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

@@ -10,7 +10,7 @@ const NavBar = () => {
       <div className="row alt-header">
         <div className="col-lg-6 col-md-6 col-sm-6 p-0">
           <div className="alt-img">
-            <Link to="/Portfolio-AV/">
+            <Link to="/">
               <img
                 src={`${process.env.PUBLIC_URL}/img/EnriqueDonaire.png`}
                 alt="logo"
@@ -23,7 +23,7 @@ const NavBar = () => {
           <div className="nav-links">
             <ul>
               <li>
-                <Link to="/Portfolio-AV/">| Work </Link>
+                <Link to="/">| Work </Link>
               </li>
               <li>
                 <Link to="/about">| About</Link>

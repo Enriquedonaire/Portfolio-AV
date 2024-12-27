@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import VideoPlayer from './VideoPlayer';
+import VideoPlayer from '../pages/VideoPlayer';
 
 const Gallery = ({images}) => {
   const navigate = useNavigate();

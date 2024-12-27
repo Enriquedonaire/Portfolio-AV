@@ -2,7 +2,7 @@
 @import "reset";
 @import "media";
 
-/* Ajustes generales */
+
 .container-fluid {
     width: 97% !important;
     max-width: 1500px;
@@ -18,7 +18,7 @@ body,
     font-family: $font;
 }
 
-/* Header section */
+
 header {
     height: 25vh;
     display: flex;
@@ -38,13 +38,13 @@ header {
             justify-content: flex-end;
             align-items: flex-start;
 
-            /* Media query para ajustar el logo en dispositivos más pequeños */
+
             @media screen and (max-width: 570px) {
                 width: 100%;
 
                 img {
                     margin: 0 auto;
-                    /* Centra la imagen horizontalmente */
+
                 }
             }
         }
@@ -65,11 +65,11 @@ header {
                 justify-content: flex-end;
                 align-items: flex-end;
 
-                /* Media query para ajustar los enlaces en dispositivos más pequeños */
+
                 @media screen and (max-width: 850px) and (min-width: 570px) {
                     width: 100%;
                     justify-content: center;
-                    /* Centra los enlaces horizontalmente */
+
                 }
 
                 li {
@@ -96,24 +96,24 @@ header {
 }
 
 
-/* LOGO responsive */
+
 .logo-img {
     width: 100%;
     height: auto;
     max-width: 300px;
 
-    /* Media query para ajustar el logo en dispositivos más pequeños */
+
     @media screen and (max-width: 570px) {
         max-width: 250px;
     }
 
-    /* Media query para ajustar el logo en dispositivos de tamaño mediano */
+
     @media screen and (min-width: 571px) and (max-width: 765px) {
         max-width: 350px;
     }
 }
 
-/* Slider section */
+
 .slider {
     display: flex;
     flex-direction: column;
@@ -157,7 +157,7 @@ header {
     }
 }
 
-/* Icons section */
+
 .icons {
     height: 30vh;
     border-bottom: 10px solid #262420;
@@ -177,13 +177,13 @@ header {
     }
 }
 
-/* Estilos para los íconos */
+
 .fa-brands {
     font-size: 3rem;
     color: #686458;
 }
 
-/* Footer */
+
 footer {
     height: 20vh;
     border-bottom: 1px solid #262420;
@@ -193,32 +193,40 @@ footer {
     justify-content: center;
     align-items: center;
 
+    .container-fluid {
+        width: 100%;
+        display: flex;
+        margin-bottom: 1.5rem;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     p {
         font-size: 2rem;
         color: #49453a;
     }
 }
 
-/* Ajustes de estilo para dispositivos móviles */
+.icon .fa-brands {
+    margin-top: 1.5rem;
+}
 
-/* Media query para dispositivos de ancho igual o menor a 375px */
+
+
+
+
 @media screen and (max-width: 375px) {
 
-    /* Estilos específicos para el iPhone 7 u otros dispositivos móviles similares */
+
     .logo-img {
         width: 80%;
         max-width: 250px;
     }
 }
 
-/* Media query para dispositivos de ancho entre 570px y 760px */
-@media screen and (min-width: 571px) and (max-width: 760px) {
-    /* Ajustes adicionales para componentes en dispositivos de tamaño mediano */
-    /* Agrega aquí cualquier ajuste adicional necesario para garantizar la legibilidad y usabilidad en dispositivos de tamaño mediano */
-}
 
-/* Media query para dispositivos de ancho igual o menor a 570px */
-@media screen and (max-width: 570px) {
-    /* Ajustes adicionales para componentes en dispositivos móviles de tamaño mediano */
-    /* Agrega aquí cualquier ajuste adicional necesario para garantizar la legibilidad y usabilidad en dispositivos más pequeños */
-}
+@media screen and (min-width: 571px) and (max-width: 760px) {}
+
+
+@media screen and (max-width: 570px) {}

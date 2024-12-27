@@ -1,16 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faVimeoV, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 import './assets/sass/style.scss';
 import { images } from './data/GalleryData';
-import Gallery from './component/Gallery';
-import VideoPlayer from './component/VideoPlayer';
-import Contact from './component/Contact';
-import About from './component/About';
+import VideoPlayer from './pages/VideoPlayer';
+import Contact from './pages/Contact';
+import About from './pages/About';
 import NavBar from './component/NavBar';
-import Footer from './component/Footer';
+import Footer from './pages/Footer';
+import HomePage from './pages/HomePage';
 
 
 function App() {
@@ -84,27 +82,11 @@ function App() {
     <>
       <NavBar className="container-fluid" />
       <Routes>
-        <Route exact path="/Portfolio-AV/" element={<Gallery images={images} />} />
+        <Route exact path="/Portfolio-AV/" element={<HomePage images={images} />} />
         <Route exact path="/video/:id" element={<VideoPlayer />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      <section className="icons container-fluid">
-        <div className="icon">
-          <a href="https://vimeo.com/user187493171" target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon className="fa-brands fa-vimeo-v" icon={faVimeoV} />
-          </a>
-          <a href="https://www.instagram.com/kikidonaire/" target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon className="fa-brands fa-pinterest" icon={faInstagram} />
-          </a>
-          <a href="https://www.github.com/Enriquedonaire" target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon className="fa-brands fa-behance" icon={faGithub} />
-          </a>
-          <a href="https://www.linkedin.com/in/enrique-a-donaire" target='_blank' rel='noreferrer'>
-            <FontAwesomeIcon className="fa-brands fa-linkedin-in" icon={faLinkedinIn} />
-          </a>
-        </div>
-      </section>
       <Footer />
     </>
   );

@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "https://enriquedonaire.github.io/Portfolio-AV/static/css/main.dba635c7.css",
-    "main.js": "https://enriquedonaire.github.io/Portfolio-AV/static/js/main.8ffca993.js",
+    "main.css": "https://enriquedonaire.github.io/Portfolio-AV/static/css/main.de3990b7.css",
+    "main.js": "https://enriquedonaire.github.io/Portfolio-AV/static/js/main.a8d661f2.js",
+    "static/media/LandingVideo.mp4": "https://enriquedonaire.github.io/Portfolio-AV/static/media/LandingVideo.8194b06e8d1f992ecd7f.mp4",
     "index.html": "https://enriquedonaire.github.io/Portfolio-AV/index.html",
-    "main.dba635c7.css.map": "https://enriquedonaire.github.io/Portfolio-AV/static/css/main.dba635c7.css.map",
-    "main.8ffca993.js.map": "https://enriquedonaire.github.io/Portfolio-AV/static/js/main.8ffca993.js.map"
+    "main.de3990b7.css.map": "https://enriquedonaire.github.io/Portfolio-AV/static/css/main.de3990b7.css.map",
+    "main.a8d661f2.js.map": "https://enriquedonaire.github.io/Portfolio-AV/static/js/main.a8d661f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.dba635c7.css",
-    "static/js/main.8ffca993.js"
+    "static/css/main.de3990b7.css",
+    "static/js/main.a8d661f2.js"
   ]
 }
